@@ -1,0 +1,33 @@
+<div class="row justify-space-between-md">
+  {{#each blogs}}
+  <div class="post-card">
+    <h2 class="post-title">{{title}}</h2>
+    <p class="post-content">{{content}}</p>
+    <p class="post-author">Author: {{User.username}}</p>
+    <a href="/post/{{id}}">View Post</a>
+    <a href="/post/edit/{{id}}">Edit Post</a>
+  </div>
+  {{/each}}
+</div>
+
+<div class="row justify-space-between-md">
+  
+  <div class="post-card">
+    <h2 class="page-title">Submit a post to the Blog!</h2>
+    <form class="form blog-post-form">
+      <div class="form-group">
+        <label for="title">Post Title:</label>
+        <input class="form-input" type="text" id="title" />
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        <input class="form-input" type="text" id="content" />
+      </div>
+      <div class="form-group blog-post-form">
+        <button class="btn btn-primary" type="submit">Post</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="./js/blogpost.js"></script>
