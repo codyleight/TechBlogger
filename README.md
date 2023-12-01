@@ -52,3 +52,6 @@ Github Link: https://github.com/codyleight
 Video Example: https://watch.screencastify.com/v/1soQO3w56EFhFbOTtGsb
 
 Email: codylthomp@gmail.com
+
+Screenshot of deployment to heroku:
+![Alt text](image.png)
