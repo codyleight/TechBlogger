@@ -1,8 +1,9 @@
 const User = require('./User');
 const Blog = require('./Blog');
+const Post = require('./Post');
 
 
-//todo add relations between user and blog.
+
 
 
 module.exports = { User, Blog };

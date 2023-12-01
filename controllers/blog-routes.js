@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Blog } = require('../models');
+const { Blog, User } = require('../models');
 
 router.post('/post', async (req, res) => {
   try {
@@ -19,5 +19,7 @@ router.post('/post', async (req, res) => {
     res.status(500).json({ message: 'Internal server error' });
   }
 });
+
+
 
 module.exports = router;
